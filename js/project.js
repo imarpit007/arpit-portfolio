@@ -12,7 +12,8 @@ const projects = [
     id: 2,
     title: "Ripple CRM",
     live: "http://www.ripplecrm.com/",
-    img: "assets/projects/ripplecrm1.png",
+    // img: "assets/projects/ripplecrm1.png",
+    img: "assets/projects/ripple_setting.jpeg",
     techs: ["JavaScript", "Angular", "AWS", "Nodejs" ,"HTML", "CSS"],
     description:
       "This website was developed for Lead & Client Management, Workflow Automation, Customer Service, Employee Tracking, Collecting Real-time data, CRM analytics, Reporting, Event Management and Email Campaining.",
@@ -21,7 +22,8 @@ const projects = [
     id: 3,
     title: "Paciolo",
     live: "https://www.paciolo.com/",
-    img: "assets/projects/paciolo.png",
+    // img: "assets/projects/paciolo.png",
+    img: "assets/projects/paciolo_home.jpeg",
     techs: ["JavaScript", "Angular", "AWS", "Nodejs" ,"HTML", "CSS"],
     description:
       "Paciolo  is  a  cloud-based  software  that  offers  services  for  electronic  invoices,  recurring  payments,  data  analysis,  andwarehouse management.",
