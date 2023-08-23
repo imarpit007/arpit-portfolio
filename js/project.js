@@ -4,6 +4,7 @@ const projects = [
     title: "BHPS's Mycreatehealth",
     live: "https://www.mycreatehealth.com/secure/employee/login",
     img: "assets/projects/bhps2.png",
+    enlarged_img: "assets/projects/bhps2-enlarged.png",
     techs: ["JavaScript", "Angular", "AWS", "Nodejs" ,"HTML", "CSS", "Ionic"],
     description:
       "This app is used to provide health card, insurances and benifits, claims, prescriptions, coverage summary, QLE and other benifits to US resident patient through web and mobile application",
@@ -14,6 +15,7 @@ const projects = [
     live: "http://www.ripplecrm.com/",
     // img: "assets/projects/ripplecrm1.png",
     img: "assets/projects/ripple_setting.jpeg",
+    enlarged_img: "assets/projects/ripple_setting.jpeg",
     techs: ["JavaScript", "Angular", "AWS", "Nodejs" ,"HTML", "CSS"],
     description:
       "This website was developed for Lead & Client Management, Workflow Automation, Customer Service, Employee Tracking, Collecting Real-time data, CRM analytics, Reporting, Event Management and Email Campaining.",
@@ -24,6 +26,7 @@ const projects = [
     live: "https://www.paciolo.com/",
     // img: "assets/projects/paciolo.png",
     img: "assets/projects/paciolo_home.jpeg",
+    enlarged_img: "assets/projects/paciolo_home.jpeg",
     techs: ["JavaScript", "Angular", "AWS", "Nodejs" ,"HTML", "CSS"],
     description:
       "Paciolo  is  a  cloud-based  software  that  offers  services  for  electronic  invoices,  recurring  payments,  data  analysis,  andwarehouse management.",
@@ -33,6 +36,7 @@ const projects = [
     title: "Saferwatchapp",
     live: "https://www.saferwatchapp.com/",
     img: "assets/projects/saferwatchapp.png",
+    enlarged_img: "assets/projects/saferwatchapp-enlarged.png",
     techs: ["JavaScript", "Angular", "AWS", "Nodejs" ,"HTML", "CSS"],
     description:
       "This was a web and mobile based security system that was built to provide higher level of safety. It send texts, photos,video and audio files in real time to Law Enforcement.",
@@ -42,6 +46,7 @@ const projects = [
     title: "WePropertyOwners (WePo)",
     live: "https://wepropertyowners.com/",
     img: "assets/projects/wepropertyowners.png",
+    enlarged_img: "assets/projects/wepropertyowners-enlarged.png",
     techs: ["JavaScript", "Angular", "AWS", "Nodejs" ,"HTML", "CSS"],
     description:
       "WePropertyOwners (WePo) is a comprehensive global listing platform for physical real estate properties, personal assetsand tokenized crypto-assets that current owners can either sell in whole or in a part via fractional share ownerships.",
@@ -51,6 +56,7 @@ const projects = [
     title: "WeCoOwn (We Co-owners)",
     live: "https://wecoown.com/",
     img: "assets/projects/wecoown.png",
+    enlarged_img: "assets/projects/wecoown.png",
     techs: ["JavaScript", "Angular", "AWS", "Nodejs" ,"HTML", "CSS"],
     description:
       "While WeCoOwn is a social community platform, where sellers can list for free to sell or lease their properties. Members caneasily find and recruit for free other like-minded co-buyers to research, purchase, and manage a real estate propertytogether.",
@@ -60,7 +66,7 @@ const projects = [
 const parentElement = document.querySelector(".carousel");
 
 projects.forEach((project) => {
-  const { title, live, img, techs, description } = project;
+  const { title, live, img, enlarged_img, techs, description } = project;
 
   // Create slide container
   const slideContainer = document.createElement("div");
@@ -74,7 +80,7 @@ projects.forEach((project) => {
   // Create project image link
   const imageLink = document.createElement("a");
   imageLink.classList.add("project-img");
-  imageLink.href = live;
+  imageLink.href = enlarged_img; //  href link for project image
   imageLink.target = "_blank";
   imageLink.rel = "noopener noreferrer";
 
@@ -136,7 +142,7 @@ projects.forEach((project) => {
   const liveDemoLink = document.createElement("a");
   liveDemoLink.classList.add("project-link");
   liveDemoLink.title = "Live Demo";
-  liveDemoLink.href = live;
+  liveDemoLink.href = live; // href link for project deployed URL
   liveDemoLink.target = "_blank";
   liveDemoLink.rel = "noopener noreferrer";
 
